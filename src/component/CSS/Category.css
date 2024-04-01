@@ -1,0 +1,121 @@
+/* CSS cho .category */
+.category {
+    margin-top: 20px;
+    padding: 0 20px;
+    height: auto;
+    
+  }
+  
+  /* CSS cho .category-container */
+  .category-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    
+  }
+  
+  /* CSS cho tiêu đề h2 trong .category-item-title */
+  .category-item-title {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Aref Ruqaa Ink', serif;
+    color: #D90429;
+  }
+  
+  /* CSS cho .category-item */
+  .category-item {
+    width: 200px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+    border: 1px solid black;
+    border-radius: 20px;
+    
+  }
+  
+  /* Hiệu ứng hover cho .category-item */
+  .category-item:hover {
+    transform: scale(1.1);
+    
+  }
+  
+  /* CSS cho hình ảnh bên trong .category-item */
+  .category-item-image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  /* CSS cho tiêu đề h4 bên trong .category-item-categoryid */
+  .category-item-categoryid {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  /* CSS for content with fixed height */
+.category-item-content {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 10px;
+  height: 75px; /* Adjust the height as needed */
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* Số dòng tối đa bạn muốn hiển thị */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+  
+  /* CSS cho liên kết a bên trong .category-item-link */
+  .category-item-link {
+    color: #D90429;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    border: 1px solid #333;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    font-family: 'Aref Ruqaa Ink', serif;
+  }
+  
+  /* Hiệu ứng hover cho liên kết a bên trong .category-item-link */
+  .category-item-link:hover {
+    background-color:#8D99AE;
+    color: #D90429;
+    text-decoration: none;
+  }
+  @media (max-width: 768px) {
+    /* Adjust the styles for smaller screens here */
+  
+    /* For .category-item, make it full-width */
+    .category-item {
+      width: 100%;
+      margin: 10px 0; /* Add some margin to separate items vertically */
+    }
+  
+    /* For .category-item-title, decrease font size and margin */
+    .category-item-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  
+    /* For .category-item-content, adjust the height to show more content */
+    .category-item-content {
+      height: auto; /* Allow content to expand */
+      line-height: 1.3; /* Increase line height for readability */
+      margin-top: 5px; /* Reduce top margin */
+    }
+  
+    /* For .category-item-link, adjust padding and font size */
+    .category-item-link {
+      padding: 5px 10px;
+      font-size: 18px;
+      margin-top: 5px;
+    }
+  }

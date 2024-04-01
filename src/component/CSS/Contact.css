@@ -1,0 +1,81 @@
+/* Reset some default styles */
+body, h1, h2, p, form {
+  margin: 0;
+  padding: 0;
+  font-family: 'Aref Ruqaa Ink', serif;
+}
+
+/* Container for the contact form */
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #D90429;
+}
+
+/* Label styles */
+label {
+  font-size: 16px;
+  margin-top: 15px;
+  display: block;
+}
+
+/* Input and textarea styles */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Radio button styles */
+input[type="radio"] {
+  margin-right: 5px;
+  vertical-align: middle; /* Align the radio buttons vertically in the middle */
+}
+
+
+/* Submit button styles */
+button[type="submit"] {
+  background-color: #EF233C;
+  color: #EDF2F4;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+/* Media query for responsive design */
+@media screen and (max-width: 768px) {
+  .contact-container {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  textarea {
+    font-size: 14px;
+  }
+}

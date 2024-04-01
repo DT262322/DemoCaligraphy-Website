@@ -1,0 +1,36 @@
+/* album.css */
+
+/* Đặt kích thước mặc định cho ảnh */
+.photo-album-photo img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out; /* Tạo hiệu ứng chuyển đổi smooth */
+  }
+  
+  /* Khi hover vào ảnh, làm cho ảnh lớn hơn */
+  .photo-album-photo:hover img {
+    transform: scale(1.1); /* Tăng kích thước ảnh lên 110% */
+  }
+  
+  /* Media query cho màn hình iPad Mini (khoảng 768px) */
+  @media (max-width: 768px) {
+    .photo-album-photo {
+      margin: 10px; /* Khoảng cách giữa các ảnh */
+    }
+    
+    .photo-album-photo img {
+      max-width: 90%; /* Giảm kích thước tối đa của ảnh */
+    }
+  }
+  
+  /* Media query cho màn hình iPhone 12 Pro (khoảng 1170px) */
+  @media (max-width: 1170px) {
+    .photo-album-photo {
+      margin: 5px; /* Khoảng cách giữa các ảnh */
+    }
+    
+    .photo-album-photo img {
+      max-width: 80%; /* Giảm kích thước tối đa của ảnh */
+    }
+  }
+  

@@ -1,0 +1,70 @@
+/* CSS cho .custom-container */
+.custom-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* CSS cho .custom-about-content */
+.custom-about-content {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* CSS cho .custom-heading */
+.custom-heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* CSS cho .custom-paragraph */
+.custom-paragraph {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* CSS cho .custom-image */
+.custom-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+/* CSS cho iPad Mini và các thiết bị tương tự */
+@media only screen and (max-width: 768px) {
+  /* Thay đổi kiểu dáng hoặc bố cục tại đây */
+  .custom-heading {
+    font-size: 20px; /* Giảm kích thước font cho tiêu đề */
+  }
+
+  .custom-paragraph {
+    font-size: 14px; /* Giảm kích thước font cho đoạn văn */
+  }
+  
+  .custom-image {
+    max-width: 80%; /* Giảm kích thước ảnh */
+  }
+}
+
+/* CSS cho iPhone 12 Pro và các thiết bị tương tự */
+@media only screen and (max-width: 375px) {
+  /* Thay đổi kiểu dáng hoặc bố cục tại đây */
+  .custom-heading {
+    font-size: 18px; /* Giảm kích thước font cho tiêu đề */
+  }
+
+  .custom-paragraph {
+    font-size: 12px; /* Giảm kích thước font cho đoạn văn */
+  }
+  
+  .custom-image {
+    max-width: 70%; /* Giảm kích thước ảnh */
+  }
+}

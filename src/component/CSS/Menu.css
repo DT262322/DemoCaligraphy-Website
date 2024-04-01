@@ -1,0 +1,66 @@
+
+
+/* Header Styles */
+#header {
+  font-family: 'Aref Ruqaa Ink', serif;
+  color: #EDF2F4;
+  text-align: center;
+}
+
+/* Logo Styles */
+.menu-logo {
+  max-width: 100px;
+  margin-right: 10px;
+}
+
+.menu-logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Menu Styles */
+.navbar {
+  background-color: #8d99ae;
+}
+
+.navbar-toggler {
+  border-color: #ec0f0f;
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #f2594e;
+}
+
+/* Mobile Styles for iPad Mini and iPhone 12 Pro */
+@media (max-width: 768px) {
+  /* Thay đổi màu nền cho thanh menu trên mobile */
+  .navbar {
+    background-color: #8d99ae;
+  }
+
+  /* Thay đổi kích thước của logo trên mobile */
+  .menu-logo {
+    max-width: 30px;
+    margin-right: 5px; /* Điều chỉnh margin để cân bằng */
+  }
+
+  /* Đảm bảo tiêu đề trang nằm giữa trên mobile */
+  #header {
+    padding: 10px 0;
+  }
+
+  /* Thay đổi kích thước margin cho các mục menu trên mobile */
+  .nav-item {
+    margin: 10px 0;
+  }
+}

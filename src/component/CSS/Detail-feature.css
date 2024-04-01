@@ -1,0 +1,35 @@
+/* CSS for Detail_feature */
+.container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .detail-feature {
+    width: 100%;
+    max-width: 800px; /* Điều chỉnh độ rộng tối đa của nội dung */
+    padding: 20px;
+  }
+  
+  .detail-feature h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #D90429;
+  }
+  
+  .detail-feature p {
+    font-size: 18px;
+    line-height: 1.5; /* Khoảng cách giữa các dòng văn bản */
+    margin-top: 20px;
+  }
+  
+  /* CSS để đảm bảo hình ảnh không bị tràn ra khỏi container */
+  .detail-feature img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Để tránh khoảng trắng dưới hình ảnh */
+    margin: 0 auto; /* Căn giữa hình ảnh trong container */
+    
+  }
+
+  

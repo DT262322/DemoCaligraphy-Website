@@ -1,0 +1,4 @@
+Download all file
+Open folder with Vscode
+Run npm-install with cmd
+Run npm-start with cmd

@@ -1,0 +1,93 @@
+/* Footer.css */
+
+/* Khu vực chung cho footer */
+.footer {
+  background-color:#8d99ae  ; /* Màu nền của footer */
+  color:#EDF2F4; /* Màu chữ cho footer */
+  padding: 20px; /* Khoảng cách giữa nội dung và các cạnh của footer */
+  display: flex;
+  flex-wrap: wrap; /* Cho phép các phần tử con xuống dòng khi không đủ không gian */
+  justify-content: space-between; /* Các phần tử con được căn giữa và căn cách xa nhau */
+  align-items: center; /* Căn giữa các phần tử con theo chiều dọc */
+}
+
+/* Khu vực 1: Content */
+.footer-content {
+  flex: 1; /* Phần này sẽ mở rộng để lấp đầy khoảng trống còn lại */
+}
+
+/* Khu vực 1: Content - Tiêu đề */
+.footer-heading {
+  color:#EDF2F4;
+  font-size: 24px; /* Kích thước font cho tiêu đề */
+}
+
+/* Khu vực 1: Content - Địa chỉ và điện thoại */
+.footer-address,
+.footer-phone {
+  margin: 10px 0; /* Khoảng cách giữa các dòng trong phần content */
+}
+
+/* Khu vực 1: Content - Social Icons */
+.social-icon {
+  margin-right: 10px; /* Khoảng cách giữa các biểu tượng mạng xã hội */
+  color: #EDF2F4; /* Màu của biểu tượng mạng xã hội */
+  transition: color 0.3s; /* Hiệu ứng thay đổi màu khi di chuột qua */
+}
+
+.social-icon:hover {
+  color: #EF233C; /* Màu khi di chuột qua */
+}
+
+/* Khu vực 2: Menu */
+.footer-link-menu {
+  flex: 1; /* Phần này cũng mở rộng để lấp đầy khoảng trống còn lại */
+  text-align: center; /* Căn giữa nội dung trong menu */
+}
+
+/* Khu vực 2: Menu - Liên kết */
+.footer-link-menu ul {
+  list-style: none; /* Loại bỏ dấu chấm liệt kê */
+  padding: 0;
+}
+
+.footer-link-menu li {
+  margin-bottom: 10px; /* Khoảng cách giữa các mục menu */
+}
+.footer-link-menu a {
+  color: #fff; /* Màu chữ cho các liên kết */
+  text-decoration: none; /* Loại bỏ gạch chân */
+  margin: 10px; /* Khoảng cách giữa các liên kết */
+  font-size: 18px; /* Kích thước font cho các liên kết */
+  transition: color 0.3s; /* Hiệu ứng thay đổi màu khi di chuột qua */
+}
+
+.footer-link-menu a:hover {
+  color: #EF233C; /* Màu khi di chuột qua */
+}
+
+/* Khu vực 3: Bản đồ */
+.footer-map {
+  flex: 1; /* Phần này mở rộng để lấp đầy khoảng trống còn lại */
+  text-align: center; /* Căn giữa nội dung bản đồ */
+}
+/* CSS cho iPhone */
+@media only screen and (max-width: 767px) {
+  /* Thay đổi kiểu hiển thị của footer-menu để hiển thị ở dạng hàng dọc */
+  .footer-link-menu {
+    text-align: left; /* Căn trái nội dung menu trên iPhone */
+  }
+  
+  /* Thay đổi kích thước và khoảng cách giữa các liên kết menu trên iPhone */
+  .footer-link-menu a {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  /* Thay đổi kích thước bản đồ trên iPhone */
+  .footer-map iframe {
+    width: 100%;
+    height: 200px;
+  }
+}
+

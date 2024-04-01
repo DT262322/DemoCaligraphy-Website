@@ -1,0 +1,76 @@
+/* Content.css */
+
+/* Định dạng content-container */
+.content-container {
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  
+}
+
+/* Định dạng danh sách các mục trong content-container */
+.content-calligraphy {
+  display: flex;
+  flex-direction: column; /* Xếp các hàng theo chiều dọc */
+  align-items: center; /* Canh giữa các hàng theo chiều ngang */
+}
+
+/* Định dạng mỗi hàng */
+.row {
+  display: flex; /* Sử dụng Flexbox cho từng hàng */
+  justify-content: center; /* Canh giữa các mục trong hàng theo chiều ngang */
+  margin-top: 10px; /* Khoảng cách giữa các hàng */
+}
+
+/* Định dạng mỗi mục trong content-container */
+.content-style-item {
+  text-decoration: none;
+  color: #333;
+  margin: 10px;
+  text-align: center;
+  display: flex; /* Sử dụng Flexbox cho mỗi mục để chúng có kích cỡ bằng nhau */
+  flex-direction: column; /* Xếp các phần tử con theo chiều dọc (tiêu đề và hình ảnh) */
+  align-items: center; /* Canh giữa các phần tử con theo chiều ngang */
+  /* Thêm định dạng cho khung */
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 300px; /* Độ rộng cố định của mỗi mục (điều chỉnh theo ý muốn) */
+  transition: transform 0.2s ease-in-out;
+  
+}
+.content-style-item:hover {
+  text-decoration: none;
+  transform: scale(1.1); /* Khi hover, phóng to một chút (1.1 lần kích thước ban đầu) */
+  background-color: #EF233C;
+  color: #EDF2F4;
+}
+
+.content-style-item img {
+  max-width: 100px; /* Độ rộng tối đa cho hình ảnh */
+  height: auto; /* Chiều cao tự động để duy trì tỷ lệ khung hình */
+}
+
+/* Định dạng tiêu đề h3 trong mục */
+.content-style-item h3 {
+  font-size: 18px; /* Kích thước font cho tiêu đề h3 */
+  margin-top: 10px; /* Khoảng cách phía trên tiêu đề h3 */
+
+}
+ /* CSS cho iPad (độ rộng màn hình 768px) */
+@media (max-width: 768px) {
+  /* Điều chỉnh các kiểu dáng cho các phần tử trên iPad ở đây */
+  .content-style-item {
+    width: 100%; /* Để phù hợp với màn hình iPad */
+    max-width: none; /* Loại bỏ giới hạn độ rộng tối đa */
+  }
+}
+
+/* CSS cho iPhone 12 Pro (độ rộng màn hình 390px) */
+@media (max-width: 390px) {
+  /* Điều chỉnh các kiểu dáng cho các phần tử trên iPhone 12 Pro ở đây */
+  .content-style-item {
+    width: 100%; /* Để phù hợp với màn hình iPhone 12 Pro */
+    max-width: none; /* Loại bỏ giới hạn độ rộng tối đa */
+  }
+}

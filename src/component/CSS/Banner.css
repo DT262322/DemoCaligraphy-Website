@@ -1,0 +1,99 @@
+
+/* Định dạng khung của carousel cho desktop */
+.banner-carousel {
+  width: 1000px; /* Độ rộng cố định cho desktop */
+  height: 300px; /* Chiều cao cố định cho desktop */
+  margin: 0 auto; /* Canh giữa carousel trong trang */
+  overflow: hidden; /* Ẩn các phần tử vượt ra ngoài kích thước của carousel */
+  position: relative; /* Để định dạng các phần tử con */
+  display: flex; /* Sử dụng Flexbox để căn giữa nút mũi tên */
+  justify-content: center; /* Canh giữa nút mũi tên theo chiều ngang */
+  align-items: center; /* Canh giữa nút mũi tên theo chiều dọc */
+  margin-top: 10px;
+}
+
+/* Định dạng hình ảnh bên trong carousel cho desktop */
+.banner-carousel img {
+  width: auto; /* Đảm bảo rằng hình ảnh sẽ phù hợp với khung carousel */
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Định dạng chú thích (legend) cho desktop */
+.banner-carousel .legend {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 18px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Định dạng nút điều hướng trái phải cho desktop */
+.banner-carousel .arrow {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 24px;
+  border-radius: 50%;
+  padding: 5px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Định dạng nút điều hướng trái cho desktop */
+.banner-carousel .arrow.left {
+  left: 10px;
+}
+
+/* Định dạng nút điều hướng phải cho desktop */
+.banner-carousel .arrow.right {
+  right: 10px;
+}
+
+/* Định dạng khung của carousel cho iPad Mini */
+@media screen and (max-width: 768px) {
+  .banner-carousel {
+    width: 100%; /* Sử dụng 100% chiều rộng để tận dụng không gian trên iPad Mini */
+    height: auto; /* Cho phép chiều cao thích ứng tự động */
+  }
+
+  /* Định dạng hình ảnh bên trong carousel cho iPad Mini */
+  .banner-carousel img {
+    height: auto; /* Cho phép hình ảnh thích ứng tự động theo chiều cao */
+    width: 100%; /* Đảm bảo rằng hình ảnh sẽ phù hợp với chiều rộng của carousel */
+    object-fit: cover; /* Cắt hoặc thu nhỏ hình ảnh để phù hợp */
+  }
+
+  /* Định dạng chú thích (legend) cho iPad Mini */
+  .banner-carousel .legend {
+    font-size: 14px ; /* Điều chỉnh font-size cho chú thích trên iPad Mini */
+  }
+
+  /* Định dạng nút điều hướng trái/phải cho iPad Mini */
+  .banner-carousel .arrow {
+    font-size: 20px; /* Điều chỉnh kích thước của nút điều hướng trên iPad Mini */
+  }
+}
+
+/* Định dạng cho iPhone 12 Pro */
+@media screen and (max-width: 390px) {
+  /* Định dạng khung của carousel cho iPhone 12 Pro */
+  .banner-carousel {
+    width: 390px; /* Độ rộng cho iPhone 12 Pro */
+    height: 117px; /* Chiều cao cho iPhone 12 Pro */
+  }
+
+  /* Định dạng hình ảnh bên trong carousel cho iPhone 12 Pro */
+  .banner-carousel img {
+    height: 117px;
+  }
+
+  /* Định dạng chú thích (legend) cho iPhone 12 Pro */
+  .banner-carousel .legend {
+    font-size: 14px;
+  }
+}

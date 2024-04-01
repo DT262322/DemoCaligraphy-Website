@@ -1,0 +1,64 @@
+/* CSS chung cho tất cả các thiết bị */
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.content-section {
+  text-align: center;
+}
+
+.content-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.content-text {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.content-comment {
+  text-align: center;
+}
+
+/* * CSS cho phần content-image */
+.content-image {
+  text-align: center;
+  margin-top: 20px;
+  /* Thay đổi khoảng cách giữa phần content-text và content-image tùy theo thiết kế của bạn */
+}
+
+/* CSS cho ảnh trong ReactPhotoAlbum (nếu cần) */
+.content-image img {
+  max-width: 100%;
+}
+
+/* CSS cho iPhone 12 Pro */
+
+@media only screen and (max-width: 375px) {
+  .content-container {
+    padding: 10px;
+  }
+
+  .content-title {
+    font-size: 20px;
+  }
+
+  .content-text {
+    font-size: 14px;
+  }
+}
+
+/* CSS cho iPad Mini */
+@media only screen and (min-width: 376px) and (max-width: 768px) {
+  .content-container {
+    padding: 15px;
+  }
+}

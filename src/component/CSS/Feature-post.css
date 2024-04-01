@@ -1,0 +1,84 @@
+/* CSS for Feature_post */
+.feature-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Khoảng cách giữa các feature-item */
+}
+
+.feature-item {
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.feature-item h2 {
+  font-size: 24px; /* Giảm kích thước font cho tiêu đề */
+  font-weight: bold;
+  font-family: 'Aref Ruqaa Ink', serif;
+  color: #D90429;
+}
+
+.feature-item h3 {
+  font-size: 16px; /* Giảm kích thước font cho mô tả ngắn */
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.feature-item-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.feature-detail-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #D90429;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid #333;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  font-family: 'Aref Ruqaa Ink', serif;
+}
+
+.feature-detail-link:hover {
+  background-color: #8D99AE;
+  color: #D90429;
+}
+
+/* CSS cho iPhone 12 Pro */
+@media only screen and (max-width: 375px) {
+  .feature-item {
+    width: 100%; /* Hiển thị 1 cột trên iPhone 12 Pro, trải dài từ trên xuống dưới */
+    margin-bottom: 20px; /* Khoảng cách giữa các feature-item */
+    padding: 10px; /* Điều chỉnh padding cho feature-item trên iPhone 12 Pro */
+    text-align: center; /* Căn giữa nội dung */
+  }
+
+  .feature-item h2 {
+    font-size: 20px; /* Giảm kích thước font cho tiêu đề trên iPhone 12 Pro */
+  }
+
+  .feature-item h3 {
+    font-size: 14px; /* Giảm kích thước font cho mô tả ngắn trên iPhone 12 Pro */
+  }
+
+  .feature-detail-link {
+    padding: 5px 10px; /* Điều chỉnh padding cho liên kết trên iPhone 12 Pro */
+    font-size: 16px; /* Giảm kích thước font cho liên kết trên iPhone 12 Pro */
+    margin-top: 5px;
+  }
+}
+
+/* CSS cho iPad Mini */
+@media only screen and (min-width: 376px) and (max-width: 768px) {
+  .feature-item {
+    width: calc(33.33% - 20px); /* Hiển thị 3 cột trên iPad Mini */
+  }
+}
